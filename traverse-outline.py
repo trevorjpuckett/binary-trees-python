@@ -10,7 +10,7 @@
 # 1) return the tree printed InOrder
 #     the outcome should be 4 2 5 1 6 3 7
 # 
-# 3)  return the outline data of the tree from right to left.
+# 2)  return the outline data of the tree from right to left.
 #     the outcome of your function should return 4 2 1 3 7
 # 
 # 3)  return the outline data of the tree from left to right.
