@@ -1,21 +1,21 @@
-'''
-PROMPT:
-for a given binary tree:
-    ex:
-
-         1
-    2        3
-4       5 6      7
-
-1) return the tree printed InOrder
-    the outcome should be 4 2 5 1 6 3 7
-
-3)  return the outline data of the tree from right to left.
-    the outcome of your function should return 4 2 1 3 7
-
-3)  return the outline data of the tree from left to right.
-    the outcome of your function should return 4 2 1 3 7
-'''
+# ##########################################################################
+# PROMPT:
+# for a given binary tree:
+#        [1]
+#      /     \
+#    [2]     [3]
+#   /   \    /  \
+# [4]   [5][6]  [7]
+# 
+# 1) return the tree printed InOrder
+#     the outcome should be 4 2 5 1 6 3 7
+# 
+# 3)  return the outline data of the tree from right to left.
+#     the outcome of your function should return 4 2 1 3 7
+# 
+# 3)  return the outline data of the tree from left to right.
+#     the outcome of your function should return 4 2 1 3 7
+# ##########################################################################
 
 from src.Tree import Factory as TreeFactory
 from src.Traverse import FROM_LEFT, FROM_RIGHT
