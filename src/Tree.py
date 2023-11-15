@@ -25,6 +25,8 @@ class Factory():
         trunk.right = Node(3)
         trunk.left.left = Node(4)
         trunk.left.right = Node(5)
+        trunk.left.right.right = Node(8)
         trunk.right.left = Node(6)
         trunk.right.right = Node(7)
+        trunk.right.left.left = Node(9)
         return Tree(trunk)

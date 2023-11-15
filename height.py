@@ -1,20 +1,22 @@
 # ##########################################################################
 # PROMPT:
 # for a given binary tree:
-#        [1]
-#      /     \
-#    [2]     [3]
-#   /   \    /  \
-# [4]   [5][6]  [7]
-# 
+#           [1]
+#        /      \
+#    [2]          [3]
+#   /   \         /  \
+# [4]   [5]     [6]  [7]
+#         \     /
+#         [8] [9]
+#
 # 1) return the tree printed InOrder
-#     the outcome should be 4 2 5 1 6 3 7
+#     the outcome should be 9 4 2 5 1 6 3 7
 # 
 # 2)  return the tree height including the trunk
-#       the outcome should be 3
+#       the outcome should be 4
 #
 # 2)  return the tree height not including the trunk
-#       the outcome should be 2
+#       the outcome should be 3
 # ##########################################################################
 
 

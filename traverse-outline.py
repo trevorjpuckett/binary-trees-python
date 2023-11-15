@@ -1,17 +1,19 @@
 # ##########################################################################
 # PROMPT:
 # for a given binary tree:
-#        [1]
-#      /     \
-#    [2]     [3]
-#   /   \    /  \
-# [4]   [5][6]  [7]
-# 
+#           [1]
+#        /      \
+#    [2]          [3]
+#   /   \         /  \
+# [4]   [5]     [6]  [7]
+#         \     /
+#         [8] [9]
+#
 # 1) return the tree printed InOrder
-#     the outcome should be 4 2 5 1 6 3 7
+#     the outcome should be 8 4 2 5 1 6 3 7
 # 
 # 2)  return the outline data of the tree from right to left.
-#     the outcome of your function should return 4 2 1 3 7
+#     the outcome of your function should return 8 4 2 1 3 7 9
 # 
 # 3)  return the outline data of the tree from left to right.
 #     the outcome of your function should return 4 2 1 3 7
@@ -25,23 +27,23 @@ def printNode(node):
 
 def main():
     tree = TreeFactory.CreateSample()
-    print('Tree in order:')
-    tree.traverse.inOrder(tree.trunk)
-    print()
+    # print('Tree in order:')
+    # tree.traverse.inOrder(tree.trunk)
+    # print()
 
     print('Tree outline from bottom right leaf to bottom left leaf:')
     tree.traverse.outline(
         tree.trunk,
-        direction=FROM_RIGHT, 
-        callback=printNode 
+        start=FROM_RIGHT, 
+        # callback=printNode 
     )
     print()
-    print('Tree outline from bottom left leaf to bottom right leaf:')
-    tree.traverse.outline(
-        tree.trunk,
-        direction=FROM_LEFT, 
-        callback=printNode 
-    )
+    # print('Tree outline from bottom left leaf to bottom right leaf:')
+    # tree.traverse.outline(
+    #     tree.trunk.left,
+    #     # direction=FROM_LEFT, 
+    #     # callback=printNode 
+    # )
 
 if __name__ == '__main__':
     main()
